@@ -31,7 +31,7 @@ body{
     /* height: 50vh; */
 }
 
-#btn-grid {
+.btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 22px;
@@ -64,4 +64,8 @@ body{
 
 .hide{
     display: none;
+}
+
+button:hover{
+    background: grey;
 }
