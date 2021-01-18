@@ -1,4 +1,13 @@
+const btnHam = document.getElementById("btn-ham");
+const nav = document.getElementById("nav");
+
+btnHam.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    btnHam.classList.toggle("active");
+});
+
 // Grab all Elements
+
 
 const startBtn = document.getElementById('start-btn')
 const nextBtn = document.getElementById('next-btn')
@@ -57,6 +66,7 @@ function resetAll() {
         answerBtns.removeChild
         (answerBtns.firstChild)
     }
+    
 }
 
 
