@@ -8,29 +8,31 @@ body{
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     font-family: 'Rubik', sans-serif;
-    /* background-color: #4FCF86; */
-    background: hsla(141, 81%, 87%, 1);
-
-    background: linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(141, 81%, 87%, 1) 0%, hsla(41, 88%, 75%, 1) 50%, hsla(358, 82%, 71%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C5F9D7", endColorstr="#F7D486", GradientType=1 );
+    background-color: #264653;
 }
 
+.title{
+    color: white;
+    top: 100px;
+    position: fixed;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+/* Question Container */
 .container{
     width: 600px;
     max-width: 80%;
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-    /* height: 50vh; */
-}
+    justify-content: center;
+    align-items: center; 
+} 
 
+/* Answer buttons */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -68,4 +70,76 @@ body{
 
 button:hover{
     background: grey;
+}
+
+
+/* 
+Right Answer Container */
+h3{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid black;
+    bottom:  160px;
+    position: fixed;
+    padding: 20px 10px;
+    background-color: white
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Ham Burger Menu */
+#btn-ham{
+    background-color: white;
+    border: none;
+    color: black;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+}
+
+#btn-ham.active{
+    transform: translateX(-100px);
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav.active {
+    transform: translateX(0);
+}
+
+nav ul li{
+    padding: 1rem 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+h4 {
+    bottom: 20px;
+    position: fixed;
 }
